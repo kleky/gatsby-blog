@@ -74,18 +74,6 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
-    },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        // your wordpress source
-        baseUrl: `klekys.wordpress.com`,
-        protocol: `https`,
-        // is it hosted on wordpress.com, or self-hosted?
-        hostingWPCOM: true,
-        // does your site use the Advanced Custom Fields Plugin?
-        useACF: false
-      }
-    },
+    }
   ],
 }
