@@ -38,8 +38,9 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong> who lives in Broughty Ferry and works in Dundee, Scotland,
+              providing scalable software for the MSP world. In my own time I enjoy building apps (Angular/Ionic)
+              and researching what's out there.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow him on Twitter

@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    title: `Kleky's Codings`,
+    author: `Ian Klek`,
+    description: `Blog n stuff`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `klek_ian`,
     },
   },
   plugins: [
@@ -74,6 +74,18 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
+    },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // your wordpress source
+        baseUrl: `klekys.wordpress.com`,
+        protocol: `https`,
+        // is it hosted on wordpress.com, or self-hosted?
+        hostingWPCOM: true,
+        // does your site use the Advanced Custom Fields Plugin?
+        useACF: false
+      }
     },
   ],
 }
